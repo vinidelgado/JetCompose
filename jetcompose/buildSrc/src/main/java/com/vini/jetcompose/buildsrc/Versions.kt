@@ -33,4 +33,5 @@ object Versions {
     const val accompanistSwipeRefresh = "0.23.1"
     const val roomVersion = "2.4.2"
     const val glance = "1.0.0-alpha01"
+    const val lifecycleRuntime = "2.3.1"
 }

@@ -1,47 +1,41 @@
 import com.vini.jetcompose.buildsrc.Dependencies
+import com.vini.jetcompose.buildsrc.Configs
+import com.vini.jetcompose.buildsrc.Versions
 
 plugins {
-    id("com.android.application")
+    id("com.android.library")
     id("org.jetbrains.kotlin.android")
 }
 
 android {
-    compileSdk = 32
+    compileSdk = Configs.compileSdkVersion
 
     defaultConfig {
-        applicationId = "com.vini.base"
-        minSdk = 21
-        targetSdk = 32
-        versionCode = 1
-        versionName = "1.0"
-
-        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+        minSdk = Configs.minSdkVersion
     }
 
-    buildTypes {
-        release {
-            isMinifyEnabled = false
-            proguardFiles(
-                getDefaultProguardFile("proguard-android-optimize.txt"),
-                "proguard-rules.pro"
-            )
-        }
-    }
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8
     }
+
     kotlinOptions {
-        jvmTarget = "1.8"
+        jvmTarget = JavaVersion.VERSION_1_8.toString()
+    }
+
+    composeOptions {
+        kotlinCompilerExtensionVersion = Versions.kotlinCompilerExtensionVersion
+    }
+
+    buildFeatures {
+        compose = true
     }
 }
 
 dependencies {
+    implementation(Dependencies.composeMaterial)
 
-    implementation(Dependencies.coreKtx)
-    implementation(Dependencies.appCompat)
-    implementation(Dependencies.material)
     testImplementation(Dependencies.junit4)
-    androidTestImplementation(Dependencies.junitExtensions)
-    androidTestImplementation(Dependencies.espressoCore)
+    testImplementation(Dependencies.junitExtensionsKtx)
+    testImplementation(Dependencies.truth)
 }

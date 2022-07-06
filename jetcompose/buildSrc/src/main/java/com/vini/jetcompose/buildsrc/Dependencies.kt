@@ -55,5 +55,9 @@ object Dependencies {
     const val roomKtx = "androidx.room:room-ktx:${Versions.roomVersion}"
     const val roomCompiler = "androidx.room:room-compiler:${Versions.roomVersion}"
     const val glance = "androidx.glance:glance-appwidget:${Versions.glance}"
+    const val lifecycleRuntime = "androidx.lifecycle:lifecycle-runtime-ktx:${Versions.lifecycleRuntime}"
+    const val composeDefault = "androidx.compose.ui:ui:${Versions.composeVersion}"
+    const val testManifest = "androidx.compose.ui:ui-test-manifest:${Versions.composeVersion}"
+    const val composeFundation = "androidx.compose.foundation:foundation:${Versions.composeVersion}"
 
 }
