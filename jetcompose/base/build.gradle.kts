@@ -33,7 +33,14 @@ android {
 }
 
 dependencies {
+    implementation(Dependencies.coreKtx)
+    implementation(Dependencies.composeDefault)
+    implementation(Dependencies.composeTooling)
+    implementation(Dependencies.composeActivity)
+    implementation(Dependencies.composeFundation)
     implementation(Dependencies.composeMaterial)
+    implementation(Dependencies.appCompat)
+    implementation(Dependencies.material)
 
     testImplementation(Dependencies.junit4)
     testImplementation(Dependencies.junitExtensionsKtx)
