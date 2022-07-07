@@ -7,7 +7,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.sp
 import com.vini.base.R
 
-private val redHatDisplayFontFamily = FontFamily(
+private val poppinsDisplayFontFamily = FontFamily(
     Font(R.font.poppins_regular),
     Font(R.font.poppins_medium, FontWeight.Medium),
     Font(R.font.poppins_bold, FontWeight.Bold),
@@ -15,7 +15,7 @@ private val redHatDisplayFontFamily = FontFamily(
 )
 
 internal val typography = Typography(
-    defaultFontFamily = redHatDisplayFontFamily,
+    defaultFontFamily = poppinsDisplayFontFamily,
     h1 = TextStyle(fontSize = 64.sp, fontWeight = FontWeight.Black),
     h2 = TextStyle(fontSize = 48.sp, fontWeight = FontWeight.Black),
     h3 = TextStyle(fontSize = 36.sp, fontWeight = FontWeight.Bold),
