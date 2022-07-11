@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.vini.lor">
+
+    <application>
+        <activity
+            android:name=".LorMainActivity"
+            android:exported="true"
+            android:label="@string/title_activity_lor_main"
+            android:theme="@style/Theme.JetCompose" />
+    </application>
+
+</manifest>

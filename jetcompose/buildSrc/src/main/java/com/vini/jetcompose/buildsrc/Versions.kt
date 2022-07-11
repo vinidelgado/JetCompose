@@ -27,11 +27,12 @@ object Versions {
     const val composeVersion = "1.1.1"
     const val composeActivityVersion = "1.4.0"
     const val composeViewModelVersion = "2.4.1"
-    const val kotlinCompilerExtensionVersion = "1.2.0-beta03"
+    const val kotlinCompilerExtensionVersion = "1.2.0-rc02"
     const val composeConstraintLayoutVersion = "1.0.0"
     const val hiltNavigationCompose = "1.0.0"
     const val accompanistSwipeRefresh = "0.23.1"
     const val roomVersion = "2.4.2"
     const val glance = "1.0.0-alpha01"
     const val lifecycleRuntime = "2.3.1"
+    const val material3 = "1.0.0-alpha13"
 }
