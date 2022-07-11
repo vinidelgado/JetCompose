@@ -11,6 +11,7 @@ object Dependencies {
     const val junitExtensionsKtx = "androidx.test.ext:junit-ktx:${Versions.junitExtensionsVersion}"
     const val espressoCore = "androidx.test.espresso:espresso-core:${Versions.espressoCoreVersion}"
     const val daggerHilt = "com.google.dagger:hilt-android:${Versions.daggerHiltVersion}"
+    const val daggerHiltLifecycle = "androidx.hilt:hilt-lifecycle-viewmodel:${Versions.daggerHiltLifecycleVersion}"
     const val daggerHiltCompiler =
         "com.google.dagger:hilt-android-compiler:${Versions.daggerHiltVersion}"
     const val retrofit = "com.squareup.retrofit2:retrofit:${Versions.retrofitVersion}"

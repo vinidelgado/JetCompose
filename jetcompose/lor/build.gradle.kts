@@ -53,6 +53,10 @@ dependencies {
     implementation(com.vini.jetcompose.buildsrc.Dependencies.composeMaterial)
     implementation(com.vini.jetcompose.buildsrc.Dependencies.appCompat)
     implementation(com.vini.jetcompose.buildsrc.Dependencies.material3)
+    implementation(com.vini.jetcompose.buildsrc.Dependencies.retrofit)
+    implementation(com.vini.jetcompose.buildsrc.Dependencies.retrofitMoshiConverter)
+    implementation(com.vini.jetcompose.buildsrc.Dependencies.okHttp)
+    implementation(com.vini.jetcompose.buildsrc.Dependencies.okHttpLoggingInterceptor)
 
     testImplementation(com.vini.jetcompose.buildsrc.Dependencies.junit4)
     testImplementation(com.vini.jetcompose.buildsrc.Dependencies.junitExtensionsKtx)

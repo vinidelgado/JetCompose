@@ -4,6 +4,8 @@ import com.vini.jetcompose.buildsrc.Configs
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
+    id("kotlin-kapt")
+    id("dagger.hilt.android.plugin")
 }
 
 android {
@@ -60,7 +62,13 @@ dependencies {
     implementation(Dependencies.composeFundation)
     implementation(Dependencies.composeMaterial)
     implementation(Dependencies.appCompat)
-    implementation(Dependencies.material)
+    implementation(Dependencies.material3)
+    implementation(Dependencies.daggerHilt)
+    kapt(Dependencies.daggerHiltCompiler)
+    implementation(Dependencies.daggerHiltLifecycle)
+    implementation(Dependencies.hiltNavigationCompose)
+
+
     testImplementation(Dependencies.junit4)
     androidTestImplementation(Dependencies.junitExtensions)
     androidTestImplementation(Dependencies.espressoCore)
